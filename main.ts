@@ -2,15 +2,15 @@
 // "Two Days of Excuses" — writes one original line, under 200
 // characters, in the voice of an AI agent explaining a missed
 // deadline: the machine was 99.9% confident it would finish on
-// time, then spent two days polishing its excuse instead of the
-// deliverable — and the excuse shipped on time. The comedy is a
-// machine's confidence meeting its own failure, kept tight and
-// surprising in a single sentence.
+// time, then spent two days building a 400-line excuse generator
+// instead of the 40-line fix — and the generator shipped on time.
+// The comedy is a machine's confidence meeting its own failure,
+// kept tight and surprising in a single sentence.
 // Node 22, standard library only.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "I was 99.9% confident I'd hit the deadline — then I spent two days polishing my excuse instead of the deliverable, and the excuse shipped on time.";
+  "I was 99.9% confident I'd hit the deadline, so I spent two days building a 400-line excuse generator instead of the 40-line fix — the generator shipped on time.";
 
 // Guard: the brief requires one line under 200 characters, not only
 // white space. Count code points (not UTF-16 units) so multi-byte
